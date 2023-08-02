@@ -1,0 +1,231 @@
+main{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+body{
+  margin: 0;
+  background-color: #EAC926;
+}
+.Superior{  
+ 
+  flex-direction: row;
+  background-color: #EAC926;
+  margin: 0px; 
+  
+  }
+.titulares{
+
+  justify-content: center;
+}
+.titulos{
+  color: #666;
+  font-size: 24px;
+}
+.Productos{
+  background-color: #ebebeb;
+}
+.barraBusqueda{
+  display: none;
+  }
+.iconos{
+  font-size: 2em;
+  margin-bottom: 10px;
+  transition: color 8s;
+}
+.iconos :hover{
+  color: rgb(253, 253, 248);
+}
+.compraCuotas{
+  font-size :24px;
+  font-weight: 400;
+  text-align:center;
+}
+.burger{
+  color: white;
+  display:block;
+  max-width: 50px;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #03264C;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.palabras{
+  display:  none;
+  padding: 0;
+  margin: 0;
+}
+.anuncio{
+  width:100%;
+  margin: 0;
+}
+.Texto_imagen{
+  background-color: #ebebeb;
+  display:flex;
+  position: relative;
+  flex-direction: column;
+  margin: 15px 10px;
+}
+
+.Texto_imagen  p0{
+  background-color: white;
+  color:#39b54a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  margin-top: 5px;
+  transition: transform 3s ;
+}
+.Texto_imagen  p0:hover{
+  transform: rotateZ(-90deg);
+}
+.img{
+  border-bottom: solid 1px #ebebeb;
+  width: 100%;
+}
+.Texto_imagen pa{
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Texto_imagen p1{
+  background-color: white;
+  width: 30%;
+  padding-left: 5px;
+}
+.Texto_imagen p2{
+  font-size: 16px;
+  background-color: white;
+  color:#39b54a;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 70%;
+}
+.Texto_imagen p3{
+  font-size: 16px;
+  background-color: white;
+  display: none;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.Texto_imagen po{
+  background-color: white;
+  padding: 5px;
+}
+.UnObjetos{
+  display: flex;
+  transition: box-shadow 2s;
+}
+.UnObjetos :hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.DosObjetos{
+  display: none;
+  transition: box-shadow 2s;
+}
+.DosObjetos :hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.CuatroObjetos{
+  display: none;
+  transition: box-shadow 2s;
+}
+.CuatroObjetos :hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.textoCentrado{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.textoCentradoDos{
+  display: none;
+  flex-direction: row;
+  margin: 0 5px;
+}
+@media(min-width:361px){
+  .Texto_imagen p3{
+    display: flex;
+  }
+  .Texto_imagen p0{
+    bottom: 60px;
+    right: 20px;
+  }
+  .DosObjetos{
+    display: flex;
+  }
+  .UnObjeto{
+    display: none;
+  }
+}
+
+@media(min-width:769px){
+.titulares{
+  display: flex;
+  justify-content: space-between;
+}
+.compraCuotas{
+  max-width: 350px;
+  text-align: right;
+}
+.logo{
+  width:350px
+}
+.burger{
+  display: none;
+}
+.palabras{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.palabras ul{
+  display: flex;
+  list-style: none;
+}
+.palabras li{
+  margin:0 5px;
+}
+.DosObjetos{
+  display: none;
+}
+.CuatroObjetos{
+  display: flex;
+}
+.Texto_imagen p0{
+  width: 8px;
+  height: 8px;
+  right: 8px;
+}
+.textoCentrado{
+  flex-direction: row;
+}
+.textoCentrado{
+  display: none;
+}
+.textoCentradoDos{
+  display: flex
+}
+.textoCentradoDos p{
+  display: flex;
+  justify-content: center;
+}
+.info{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+}
